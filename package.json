@@ -1,0 +1,22 @@
+{
+  "name": "algoproblems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "twoNumSum.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danny05158/algoProblems.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danny05158/algoProblems/issues"
+  },
+  "homepage": "https://github.com/danny05158/algoProblems#readme",
+  "devDependencies": {
+    "chai": "^4.2.0"
+  }
+}
