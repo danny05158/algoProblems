@@ -27,6 +27,5 @@ describe('Closest Value BST', () => {
     }
   }
 
-  it('expect ClosestValue to be a function', () => {
-  });
+ 
 });
