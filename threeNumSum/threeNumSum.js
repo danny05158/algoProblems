@@ -1,10 +1,12 @@
-/*write a function that takes in a non empty
+/*
+Problem:
+write a function that takes in a non empty
 array of distict integers and an integer representing
 a target sum. The func should find all triplets in the array
 that sum up to the target sum */
 
 
-//Brute force method 
+//Brute force method
 function threeNumSum(array, targetSum) {
   let resultArr = [];
 
