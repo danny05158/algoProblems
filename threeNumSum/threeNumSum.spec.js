@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 const threeNumSum = require('./threeNumSum');
 
-describe('three Num Sum', () => {
+describe('random numbs', () => {
   let testArr = [12, 3, 1, 2, -6, 5, -8, 6];
   let targetSum = 0;
 

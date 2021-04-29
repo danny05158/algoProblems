@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/danny05158/algoProblems#readme",
   "devDependencies": {
-    "chai": "^4.2.0"
+    "chai": "^4.3.4"
   }
 }
