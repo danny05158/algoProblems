@@ -1,31 +1,19 @@
 const { expect } = require('chai');
 const closestValue = require('./closestValue');
+const BST = require('./createBst');
 
-describe('Closest Value BST', () => {
-  class BST {
-    constructor(value) {
-      this.value = value;
-      this.left = null;
-      this.right = null;
-    }
+const initialVal = 9;
+const bst = new BST(initialVal);
 
-    insert(value) {
-      if (value < this.value) {
-        if (this.left === null) {
-          this.left = new BST(value);
-        } else {
-          this.left.insert(value);
-        }
-      } else {
-        if (this.right === null) {
-          this.right = new BST(value);
-        } else {
-          this.right.insert(value);
-        }
-      }
-      return this;
-    }
-  }
+//insert into the binary search tree
+bst.insert(5);
+bst.insert(7);
+bst.insert(9);
+bst.insert(15);
 
- 
+describe('Find closest value', () => {
+
+  let closestVal = closestValue(bst, 3);
+  expect(closestVal).to.equal(5);
+
 });
