@@ -1,4 +1,7 @@
-const { expect } = require('chai');
+var chai = require('chai')
+, expect = chai.expect
+, should = chai.should();
+
 const closestValue = require('./closestValue');
 const BST = require('./createBst');
 
