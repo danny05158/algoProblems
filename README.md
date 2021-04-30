@@ -1,12 +1,7 @@
 # Algo Problems using TDD
 
-Every file has a .spec.js file which uses Chai TDD assertion library. Here, the documentation for using Chai
-https://www.chaijs.com/
-
+Every javascript file has a .spec.js file which uses the npm package Chai library. Here, the documentation for using Chai https://www.chaijs.com/
 ## Getting Started
-These instructions will get you started if you clone this repo.
+These instructions will get you started.
 
-npm i - will install mocha (which allows you to use mocha in the terminal) and chai so that you can make assertions in your specs.
-
-EX: mocha FILENAME.spec.js - will run mocha tests
-
+npm install - will install chai as a dependency. in order to use the testing library you will need to install mocha globally. Here is the docs for that https://mochajs.org/#installation. Once installed, in the file directory your want to run the tests you can do so by doing mocha FILENAME.spec.js .
