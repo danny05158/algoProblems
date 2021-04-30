@@ -57,9 +57,11 @@ Deck.prototype.shuffleCards = function(){
   let randomNumb;
 
   while (length){
-    randomNumb = Math.floor(Math.random() * m--)
+    randomNumb = Math.floor(Math.random() * length--)
     [deck[length], deck[randomNumb]] = [deck[randomNumb], deck[length]]
   }
    return this;
 
 }
+
+module.exports = Deck;
