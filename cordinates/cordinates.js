@@ -18,15 +18,6 @@ Rules:
 3. The status of a position to be created should be 'filled'
  */
 
-var locations = {
-  1:{"id":111, "title":"Test1"},
-  2:{"id":222, "title":"Test2"}
-};
-
-var positions = {
-  1:{"id":111, "location_id":111, "remote":false, "status": "open"},
-  2:{"id":222, "location_id":222, "remote":true, "status":"open"},
-}
 
 class CreatePosition{
 
