@@ -4,7 +4,7 @@ const ReverseInt = require('./reverseInt');
 describe('numberToString', function(){
 
 
-  it('retrieves a string from numb', async function(){
+  it('retrieves a string from numb', async () => {
     const number = Math.floor(Math.random() * 100);
     const res = new ReverseInt(number);
 
@@ -13,26 +13,25 @@ describe('numberToString', function(){
 
   });
 
-  it('cast str to numb', async function(){
+  it('cast str to numb', async () => {
 
     const number = Math.floor(Math.random() * 100);
     const res = new ReverseInt(number);
 
     const casted = res.castToNumber();
     expect(casted).to.equal(number);
-  })
+  });
 
-  it('tests if number is greater than signed 32 bit val', async function(){
+  it('tests if number is greater than signed 32 bit val', async () => {
     const number = Math.floor(Math.random() * 100);
     const res = new ReverseInt(number);
 
     const test = res.maxHexDecimal();
     expect(test).to.equal(number);
 
-  })
+  });
 
-
-  it('test all funcs in the class', async function(){
+  it('test all funcs in the class', async () => {
     const number = 123;
     const res = new ReverseInt(number);
 
@@ -43,6 +42,4 @@ describe('numberToString', function(){
 
     expect(final).to.equal(321);
   })
-
-
 });

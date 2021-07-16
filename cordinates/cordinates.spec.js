@@ -4,7 +4,7 @@ should = chai.should();
 
 const CreatePosition = require('./cordinates')
 
-describe('Test CreatePosition class', function (){
+describe('Test CreatePosition class', () => {
 
   var locations = {
     1:{"id":111, "title":"Test1"},
@@ -18,19 +18,19 @@ describe('Test CreatePosition class', function (){
 
   const pos = new CreatePosition(positions, locations);
 
-  it('expects pos to be an object', async function(){
+  it('expects pos to be an object', async () => {
     pos.should.be.an('object');
   })
 
   pos.createPos();
   let created_positions = pos.return_position_created();
 
-  it('should have property of remote and length of 1', async function(){
+  it('should have property of remote and length of 1', async () => {
     created_positions.should.have.property('remote').with.lengthOf(1);
   })
 
-  it('should have property of onsite and length of 1', async function(){
+  it('should have property of onsite and length of 1', async () => {
     created_positions.should.have.property('onsite').with.lengthOf(1);
   })
 
-})
+});
