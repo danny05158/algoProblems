@@ -1,8 +1,5 @@
 <?php
 
-$nums1 = [1,2,2,1];
-$nums2 = [2,2];
-
 function intersect($arr1, $arr2){
   $map = new stdClass();
   $returnArr = [];
@@ -28,5 +25,5 @@ function intersect($arr1, $arr2){
 
 }
 
-$rs = intersect($nums1, $nums2);
+$rs = intersect([1,2,2,1], [2,2]);
 echo'<pre>';print_r($rs);echo'</pre>';
