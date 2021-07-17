@@ -5,7 +5,8 @@ an array in sorted order. otherwise return an empty array
 */
 
 //Brute Force Method
-function twoNumberSum(array, targetSum) {
+const twoNumberSum = (array, targetSum) => {
+
   for (let i = 0; i < array.length; i++) {
     for (let j = i + 1; j < array.length; j++) {
       if (array[i] + array[j] === targetSum) {
@@ -13,6 +14,7 @@ function twoNumberSum(array, targetSum) {
       }
     }
   }
+  
 }
 
 module.exports = twoNumberSum;
