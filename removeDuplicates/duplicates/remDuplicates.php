@@ -2,6 +2,12 @@
 
 class RemovDuplicates {
 
+
+  /****
+    @param Integer $nums
+    @return Integer
+  */
+
   public function __construct($nums){
     $this->nums = $nums;
   }
