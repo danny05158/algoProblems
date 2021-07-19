@@ -25,15 +25,17 @@ class Deck {
     this.suits = ['Hearts', 'Spades', 'Clubs', 'Dimonds'];
     this.values = ['Ace', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'jack', 'Queen', 'King'];
     this.deck = []
-
-    for(let suit in this.suits){
-      for(let val in this.values){
-        this.deck.push(`${this.values[val]} of ${this.suits[suit]}`)
-      }
-    }
-    this.shuffleCards()
   }
 }
+
+Deck.prototype.populateDeck = function() {
+
+  for(let suit in this.suits){
+    for(let val in this.values){
+      this.deck.push(`${this.values[val]} of ${this.suits[suit]}`)
+    }
+  }
+};
 
 Deck.prototype.drawCard = function(){
 

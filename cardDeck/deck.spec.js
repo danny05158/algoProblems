@@ -10,6 +10,8 @@ describe('Test Deck of Cards funcs', () => {
   });
 
   it('can draw a card', async () => {
+    deck.populateDeck();
+    deck.shuffleCards();
     let card = deck.drawCard('top');
     expect(card).to.be.an('string');
   });
